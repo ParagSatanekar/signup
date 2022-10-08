@@ -19,7 +19,7 @@ useEffect (async ()=> {
    }).then(res=>res.json( ))
    .then(data=>{console.log(data)
     setEmail(data.email)
-  }
+  } 
    )
 },[])
   const logout = (props) =>{
