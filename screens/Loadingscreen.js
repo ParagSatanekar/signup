@@ -4,7 +4,7 @@ import ReactRootView from 'react-native';
 import { ActivityIndicator } from 'react-native-paper';
 import { StyleSheet } from 'react-native';
 import { View } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+ import AsyncStorage from '@react-native-async-storage/async-storage';
 
  const Loadingscreen = (props) => {
 

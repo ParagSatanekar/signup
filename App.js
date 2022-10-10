@@ -1,5 +1,3 @@
-
-
 //  import ReactRootView, { View } from 'react-native';
 import React ,{useEffect,useState} from 'react';  
 //import { Button , TextInput} from 'react-native-paper';
@@ -9,15 +7,17 @@ import React ,{useEffect,useState} from 'react';
   import Loginscreen from './screens/Loginscreen';  
  import Loadingscreen from './screens/Loadingscreen';
 // import Homescreen from './screens/Homescreen';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+//import { NavigationContainer } from '@react-navigation/native';
+//import { createStackNavigator } from '@react-navigation/stack';
 import 'react-native-gesture-handler';
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import Homescreen from './screens/Homescreen';
+//import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";  
 // import { AsyncStorage } from 'react-native';
 
 
-const Stack = createStackNavigator();
+// const Stack = createStackNavigator();
 
 const App = () => {
      const [isloggedin,setLogged] = useState(null) 
@@ -37,17 +37,17 @@ const detectLogin = async () => {
 
   return (  
 
-<NavigationContainer>
+<BrowserRouter>
 
-    <Stack.Navigator headerMode="none"> 
+    <Routes headerMode="none"> 
    
-    <Stack.Screen name="laoding" component={Loadingscreen} /> 
-    <Stack.Screen name="home" component={Homescreen} />
-    <Stack.Screen name="login " component={Loginscreen} />  
-    <Stack.Screen name="signup" component={Signup} />
+    <Route name="laoding" component={Loadingscreen} /> 
+    <Route name="home" component={Homescreen} />
+    <Route name="login " component={Loginscreen} />  
+    <Route name="signup" component={Signup} />
    
-   </Stack.Navigator>
-  </NavigationContainer>
+   </Routes>
+   </BrowserRouter>
 )};
 
 

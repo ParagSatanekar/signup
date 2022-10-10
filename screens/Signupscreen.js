@@ -2,6 +2,7 @@
 
  import ReactRootView from 'react-native';
  import React, {useState} from 'react';  
+ import { AsyncStorage } from 'react-native';
  import { Button , TextInput} from 'react-native-paper';
 //   import type {Node} from 'react';
  import {StatusBar,
