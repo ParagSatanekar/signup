@@ -35,6 +35,7 @@ const detectLogin = async () => {
   alignItems:"center"
   }
 })                      //style
+
  
  
  export default Loadingscreen;
