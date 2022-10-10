@@ -38,5 +38,5 @@ const detectLogin = async () => {
 
  
  
- export default Loadingscreen;
+ export default Loadingscreen;  
  
