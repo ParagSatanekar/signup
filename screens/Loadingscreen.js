@@ -34,7 +34,7 @@ const detectLogin = async () => {
   justifyContent:"center",
   alignItems:"center"
   }
-})                      //style
+})                      ///style
 
  
  
